@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Mail, Phone } from "lucide-react";
+import { ArrowRight, Instagram } from "lucide-react";
 
 const CallToAction = () => {
   return (
@@ -19,21 +19,25 @@ const CallToAction = () => {
             Start Your Garden Program
             <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
           </Button>
-          <Button variant="heroSecondary" size="lg" className="px-8 py-6 text-lg font-semibold">
+          <Button 
+            variant="heroSecondary" 
+            size="lg" 
+            className="px-8 py-6 text-lg font-semibold"
+            onClick={() => {
+              const implementationSection = document.getElementById('implementation');
+              implementationSection?.scrollIntoView({ behavior: 'smooth' });
+            }}
+          >
             Learn More About Implementation
           </Button>
         </div>
         
         <div className="border-t border-primary-foreground/20 pt-8">
-          <p className="text-lg mb-4 opacity-90">Get in touch to bring Rooted Together to your school</p>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center text-sm opacity-80">
+          <p className="text-lg mb-4 opacity-90">Follow our journey on social media</p>
+          <div className="flex justify-center items-center text-sm opacity-80">
             <div className="flex items-center gap-2">
-              <Mail className="w-4 h-4" />
-              <span>contact@rootedtogether.org</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Phone className="w-4 h-4" />
-              <span>+1 (555) 123-GROW</span>
+              <Instagram className="w-5 h-5" />
+              <span>@rooted.tg</span>
             </div>
           </div>
         </div>
