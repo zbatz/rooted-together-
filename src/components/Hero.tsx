@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-garden-learning.jpg";
 
 const Hero = () => {
@@ -25,17 +26,15 @@ const Hero = () => {
         </p>
         
         <div className="flex justify-center">
-          <Button 
-            variant="hero" 
-            size="lg" 
-            className="px-8 py-6 text-lg font-semibold"
-            onClick={() => {
-              const missionSection = document.getElementById('mission');
-              missionSection?.scrollIntoView({ behavior: 'smooth' });
-            }}
-          >
-            Discover Our Mission
-          </Button>
+          <Link to="/mission">
+            <Button 
+              variant="hero" 
+              size="lg" 
+              className="px-8 py-6 text-lg font-semibold"
+            >
+              Discover Our Mission
+            </Button>
+          </Link>
         </div>
       </div>
       
