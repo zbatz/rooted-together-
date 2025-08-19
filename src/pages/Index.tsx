@@ -1,7 +1,6 @@
 import Hero from "@/components/Hero";
 import MissionSection from "@/components/MissionSection";
 import PillarsSection from "@/components/PillarsSection";
-import ImplementationSection from "@/components/ImplementationSection";
 import CallToAction from "@/components/CallToAction";
 
 const Index = () => {
@@ -10,7 +9,6 @@ const Index = () => {
       <Hero />
       <MissionSection />
       <PillarsSection />
-      <ImplementationSection />
       <CallToAction />
     </div>
   );

@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Instagram } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const CallToAction = () => {
   return (
@@ -10,7 +11,6 @@ const CallToAction = () => {
         </h2>
         
         <p className="text-xl mb-8 opacity-95 leading-relaxed">
-          Join the growing network of schools transforming education through nature-based learning. 
           Together, we can cultivate a generation prepared to care for our planet.
         </p>
         
@@ -19,17 +19,15 @@ const CallToAction = () => {
             Start Your Garden Program
             <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
           </Button>
-          <Button 
-            variant="heroSecondary" 
-            size="lg" 
-            className="px-8 py-6 text-lg font-semibold"
-            onClick={() => {
-              const implementationSection = document.getElementById('implementation');
-              implementationSection?.scrollIntoView({ behavior: 'smooth' });
-            }}
-          >
-            Learn More About Implementation
-          </Button>
+          <Link to="/implementation">
+            <Button 
+              variant="heroSecondary" 
+              size="lg" 
+              className="px-8 py-6 text-lg font-semibold"
+            >
+              Learn More About Implementation
+            </Button>
+          </Link>
         </div>
         
         <div className="border-t border-primary-foreground/20 pt-8">
