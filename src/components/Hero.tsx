@@ -24,12 +24,17 @@ const Hero = () => {
           Where students grow alongside their gardens, developing both knowledge and stewardship for our planet.
         </p>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button variant="hero" size="lg" className="px-8 py-6 text-lg font-semibold">
+        <div className="flex justify-center">
+          <Button 
+            variant="hero" 
+            size="lg" 
+            className="px-8 py-6 text-lg font-semibold"
+            onClick={() => {
+              const missionSection = document.getElementById('mission');
+              missionSection?.scrollIntoView({ behavior: 'smooth' });
+            }}
+          >
             Discover Our Mission
-          </Button>
-          <Button variant="heroSecondary" size="lg" className="px-8 py-6 text-lg font-semibold">
-            Join the Movement
           </Button>
         </div>
       </div>
