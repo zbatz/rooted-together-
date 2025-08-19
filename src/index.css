@@ -2,39 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Rooted Together Design System - Nature-inspired educational platform */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Nature-inspired color palette */
+    --background: 30 25% 98%;
+    --foreground: 120 15% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 60 30% 96%;
+    --card-foreground: 120 15% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 60 30% 96%;
+    --popover-foreground: 120 15% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary: Deep forest green */
+    --primary: 120 40% 25%;
+    --primary-foreground: 60 30% 98%;
+    --primary-glow: 120 50% 35%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary: Warm earth tone */
+    --secondary: 30 35% 85%;
+    --secondary-foreground: 120 40% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted: Soft sage */
+    --muted: 90 20% 88%;
+    --muted-foreground: 120 15% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent: Fresh spring green */
+    --accent: 95 45% 70%;
+    --accent-foreground: 120 40% 25%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 60 30% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 90 15% 85%;
+    --input: 90 15% 85%;
+    --ring: 120 40% 25%;
+
+    /* Custom nature-inspired colors */
+    --nature-primary: 120 40% 25%;
+    --nature-secondary: 95 45% 70%;
+    --nature-tertiary: 30 35% 85%;
+    --earth-warm: 25 45% 75%;
+    --leaf-fresh: 110 50% 60%;
+    --sky-soft: 200 40% 85%;
+
+    /* Gradients */
+    --gradient-nature: linear-gradient(135deg, hsl(var(--nature-primary)), hsl(var(--nature-secondary)));
+    --gradient-earth: linear-gradient(180deg, hsl(var(--earth-warm)), hsl(var(--nature-tertiary)));
+    --gradient-growth: linear-gradient(45deg, hsl(var(--leaf-fresh)), hsl(var(--accent)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--nature-primary) / 0.9), hsl(var(--leaf-fresh) / 0.8));
+
+    /* Shadows with natural tones */
+    --shadow-natural: 0 10px 30px -10px hsl(var(--nature-primary) / 0.15);
+    --shadow-soft: 0 4px 20px -8px hsl(var(--nature-primary) / 0.1);
+    --shadow-glow: 0 0 40px hsl(var(--nature-secondary) / 0.3);
+
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --radius: 0.5rem;
 

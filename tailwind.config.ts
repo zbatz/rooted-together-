@@ -26,7 +26,8 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					glow: 'hsl(var(--primary-glow))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -52,6 +53,21 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// Nature-inspired custom colors
+				nature: {
+					primary: 'hsl(var(--nature-primary))',
+					secondary: 'hsl(var(--nature-secondary))',
+					tertiary: 'hsl(var(--nature-tertiary))'
+				},
+				earth: {
+					warm: 'hsl(var(--earth-warm))'
+				},
+				leaf: {
+					fresh: 'hsl(var(--leaf-fresh))'
+				},
+				sky: {
+					soft: 'hsl(var(--sky-soft))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -62,6 +78,21 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				}
+			},
+			backgroundImage: {
+				'gradient-nature': 'var(--gradient-nature)',
+				'gradient-earth': 'var(--gradient-earth)',
+				'gradient-growth': 'var(--gradient-growth)',
+				'gradient-hero': 'var(--gradient-hero)'
+			},
+			boxShadow: {
+				'natural': 'var(--shadow-natural)',
+				'soft': 'var(--shadow-soft)',
+				'glow': 'var(--shadow-glow)'
+			},
+			transitionTimingFunction: {
+				'smooth': 'var(--transition-smooth)',
+				'bounce': 'var(--transition-bounce)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
