@@ -22,18 +22,19 @@ const PillarsSection = () => {
       icon: Users,
       title: "Community Building",
       description: "Rooted Together creates lasting cultural change by strengthening bonds between schools and communities. Students, families, and volunteers work together, fostering collaboration and creating ripple effects of environmental stewardship.",
-      image: communityHarvestImage,
-      variant: "featured" as const
+      image: communityHarvestImage
     },
     {
       icon: Leaf,
       title: "Environmental Stewardship",
-      description: "Students learn that nature cannot be endlessly consumed without being sustained. Through hands-on engagement with living systems, they develop responsibility for environmental care and become equipped to address global challenges."
+      description: "Students learn that nature cannot be endlessly consumed without being sustained. Through hands-on engagement with living systems, they develop responsibility for environmental care and become equipped to address global challenges.",
+      image: handsPlantingImage
     },
     {
       icon: Accessibility,
       title: "Inclusive Learning",
-      description: "Gardening provides flexible, adaptable learning for all students. The tactile experiences create rich sensory engagement that benefits diverse learners while fostering empathy, collaboration, and respect throughout the school community."
+      description: "Gardening provides flexible, adaptable learning for all students. The tactile experiences create rich sensory engagement that benefits diverse learners while fostering empathy, collaboration, and respect throughout the school community.",
+      image: outdoorLearningImage
     }
   ];
 
@@ -50,7 +51,7 @@ const PillarsSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 auto-rows-fr">
           {pillars.map((pillar, index) => (
             <PillarCard
               key={index}
@@ -58,7 +59,6 @@ const PillarsSection = () => {
               title={pillar.title}
               description={pillar.description}
               image={pillar.image}
-              variant={pillar.variant}
             />
           ))}
         </div>

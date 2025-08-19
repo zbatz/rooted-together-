@@ -6,23 +6,18 @@ interface PillarCardProps {
   title: string;
   description: string;
   image?: string;
-  variant?: "default" | "featured";
 }
 
-const PillarCard = ({ icon: Icon, title, description, image, variant = "default" }: PillarCardProps) => {
+const PillarCard = ({ icon: Icon, title, description, image }: PillarCardProps) => {
   return (
-    <Card className={`group transition-all duration-300 hover:shadow-natural hover:-translate-y-2 overflow-hidden h-full flex flex-col ${
-      variant === "featured" ? "md:col-span-2" : ""
-    }`}>
-      {image && (
-        <div className="h-48 overflow-hidden flex-shrink-0">
-          <img 
-            src={image} 
-            alt={title}
-            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-          />
-        </div>
-      )}
+    <Card className="group transition-all duration-300 hover:shadow-natural hover:-translate-y-2 overflow-hidden h-full flex flex-col">
+      <div className="h-48 overflow-hidden flex-shrink-0">
+        <img 
+          src={image} 
+          alt={title}
+          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+        />
+      </div>
       
       <CardContent className="p-6 flex-1 flex flex-col">
         <div className="flex items-center gap-3 mb-4">
